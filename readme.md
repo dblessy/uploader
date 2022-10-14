@@ -31,18 +31,25 @@ Download file:This allows user to download the file using cloudfront.
 
 Admin panel:Admin panel lets the admin view all the files in the application and lets the admin delete the files.
 
+Registration:
 ![scr1](images/reg.png)
 
+Login:
 ![scr1](images/login.png)
 
+Homepage:
 ![scr2](images/home.png)
 
+Upload:
 ![scr3](images/new.png)
 
+List files:
 ![scr4](images/list.png)
 
+Download file:
 ![scr5](images/download.png)
 
+Admin panel:
 ![scr6](images/admin.png)
 
 ## Architecture Diagram:
