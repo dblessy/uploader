@@ -31,7 +31,7 @@ Admin panel:Admin panel lets the admin view all the files in the application and
 
 ## Architecture Diagram:
 
-![arch diag]()
+![arch diag](images/arch.jpg)
 
 ## Technologies used:
 ### Aws Resources to set up:
