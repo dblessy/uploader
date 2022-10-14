@@ -30,7 +30,7 @@ class UploadsTable extends React.Component {
     }
 
     fetchRemoteItems() {
-        fetch("http://files.dblessy.com/upload", {method: 'GET', headers: {
+        fetch("https://files.dblessy.com/upload", {method: 'GET', headers: {
             'Authorization': localStorage.getItem("authToken"),
                 'Accept': 'application/json'
             }})
@@ -51,7 +51,7 @@ class UploadsTable extends React.Component {
     }
 
     deleteRemoteItem(id) {
-        fetch('http://files.dblessy.com/upload/' + id, { method: 'DELETE', headers: {
+        fetch('https://files.dblessy.com/upload/' + id, { method: 'DELETE', headers: {
                 'Authorization': localStorage.getItem("authToken"),
             } })
             .then(res => res.json())
@@ -63,7 +63,7 @@ class UploadsTable extends React.Component {
     }
 
     getRemoteItem(id) {
-        fetch('http://files.dblessy.com/upload/' + id, { method: 'GET', headers: {
+        fetch('https://files.dblessy.com/upload/' + id, { method: 'GET', headers: {
                 'Authorization': localStorage.getItem("authToken")
             },redirect: 'follow'})
             .then(res => {

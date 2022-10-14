@@ -3,8 +3,6 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
 import {Toast} from "react-bootstrap";
-import { useSearchParams } from 'react-router-dom';
-
 
 class New extends React.Component {
 
@@ -61,7 +59,7 @@ class New extends React.Component {
         formData.append('description', this.state.description);
 
         fetch(
-            "http://files.dblessy.com/upload", {method: 'POST', headers: {
+            "https://files.dblessy.com/upload", {method: 'POST', headers: {
                     'Authorization': localStorage.getItem("authToken")},
                 body: formData}
         )
@@ -84,7 +82,7 @@ class New extends React.Component {
         formData.append('file', this.state.file);
 
         fetch(
-            "http://files.dblessy.com/upload/" + id, {method: 'PUT', headers: {
+            "https://files.dblessy.com/upload/" + id, {method: 'PUT', headers: {
                     'Authorization': localStorage.getItem("authToken")},
                 body: formData}
         )

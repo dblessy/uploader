@@ -31,7 +31,7 @@ class Admin extends React.Component {
     }
 
     fetchRemoteItems() {
-        fetch("http://files.dblessy.com/admin/upload", {method: 'GET', headers: {
+        fetch("https://files.dblessy.com/admin/upload", {method: 'GET', headers: {
                 'Authorization': localStorage.getItem("authToken"),
                 'Accept': 'application/json'
             }})
@@ -52,7 +52,7 @@ class Admin extends React.Component {
     }
 
     deleteRemoteItem(id) {
-        fetch('http://files.dblessy.com/admin/upload/' + id, { method: 'DELETE', headers: {
+        fetch('https://files.dblessy.com/admin/upload/' + id, { method: 'DELETE', headers: {
                 'Authorization': localStorage.getItem("authToken"),
             } })
             .then(res => res.json())

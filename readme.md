@@ -1,6 +1,6 @@
 # Uploader
 
-URL:
+URL:https://uploader.dblessy.com/
 
 University:[SJSU](https://www.sjsu.edu/)
 
@@ -27,7 +27,23 @@ Delete file:This allows the user to delete the file.
 
 Modify file:This allows the user to modify the contents of the file.
 
+Download file:This allows user to download the file using cloudfront.
+
 Admin panel:Admin panel lets the admin view all the files in the application and lets the admin delete the files.
+
+![scr1](images/reg.png)
+
+![scr1](images/login.png)
+
+![scr2](images/home.png)
+
+![scr3](images/new.png)
+
+![scr4](images/list.png)
+
+![scr5](images/download.png)
+
+![scr6](images/admin.png)
 
 ## Architecture Diagram:
 

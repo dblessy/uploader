@@ -105,7 +105,7 @@ function Login() {
     }
 
     const fetchRemoteItems = () => {
-        fetch("http://files.dblessy.com/user", {method: 'GET', headers: {
+        fetch("https://files.dblessy.com/user", {method: 'GET', headers: {
                 'Authorization': localStorage.getItem("authToken"),
                 'Accept': 'application/json'
             }})
@@ -149,7 +149,7 @@ function Login() {
 
         console.log(name, last)
         fetch(
-            "http://files.dblessy.com/user", {method: 'POST', headers: {
+            "https://files.dblessy.com/user", {method: 'POST', headers: {
                     'Authorization': localStorage.getItem("authToken"), 'Content-Type': 'application/json'},
                 body: JSON.stringify(obj)}
         ).then((result) => {
