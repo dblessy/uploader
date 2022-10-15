@@ -2,6 +2,8 @@
 
 URL:https://uploader.dblessy.com/
 
+Demo link:https://youtu.be/0RJmkiUN9aM
+
 University:[SJSU](https://www.sjsu.edu/)
 
 Course:[Cloud Technologies](https://catalog.sjsu.edu/)
@@ -17,7 +19,7 @@ Uploader is a full stack web application which uses aws cloud resources to store
 The list of features provided by this application are:
 User registration by using OAuth:New User can register to the application.
 
-User Login: Existing users can login by using their Oauth credentials.
+User Login: Existing users can  use the custom login to the application by using their Oauth credentials.
 
 Upload files:For the user to upload files to S3.
 
