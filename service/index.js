@@ -37,11 +37,11 @@ const uploadS3 = multer({
 });
 
 let pool=mysql.createPool({
-    host:'project1db.ce5npftgvxpf.us-west-1.rds.amazonaws.com',
-    user:"blessydb",
-    password:"blessydb",
+    host:'$hostname',
+    user:"$username",
+    password:"$password",
     port:3306,
-    database: "project1"
+    database: "$dbname"
 });
 
 const checkExists = async (req, res, next) => {
