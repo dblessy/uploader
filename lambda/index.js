@@ -1,10 +1,10 @@
 const mysql=require('mysql');
 let pool=mysql.createPool({
-    host:'project1db.ce5npftgvxpf.us-west-1.rds.amazonaws.com',
-    user:"blessydb",
-    password:"blessydb",
+    host:'$hostarn',
+    user:"$username",
+    password:"$password",
     port:3306,
-    database: "project1"
+    database: "$dbname"
 });
 
 exports.handler=function(event,context,callback){
